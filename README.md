@@ -8,7 +8,8 @@ worry about all the dependencies being properly installed.
 * a working [Docker Compose](http://docker.io) installation
 
 # Building
-Type `docker-compose build` to build the image.
+Type `docker-compose build` to build the image.  If you want a new version to be built on Docker Hub,
+just snap a branch in GitHub and the branch name, eg `1.6.3` will be used as the Docker image tag.
 
 # Installation
 Docker will automatically install the newly built image into the cache.
@@ -21,7 +22,7 @@ configured to mount your home directory into the container.
 
 ## Launching The Image
 Run `./fpm.sh` and it will launch the container with the default command line argument of `--version`.  You can
-feed different arguments to script and execute arbitrary commands, eg. `./fpm.sh configure`.
+feed different arguments to script and execute arbitrary commands, eg. `./fpm.sh --help`.
 
 # Troubleshooting
 

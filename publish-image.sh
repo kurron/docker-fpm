@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# NOTE: Docker Hub is rigged up to automatically build all branches so you don't need to run this script.
+
 if [ "$1" = "" ]
 then
  echo "Usage: $0 tag"
