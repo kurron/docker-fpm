@@ -10,5 +10,5 @@ CMD="docker run \
        --volume $(pwd):/pwd \
        kurron/docker-fpm:1.6.3"
 
-#eval echo $CMD $*
-eval $CMD $*
+echo $CMD "$@"
+$CMD "$@"
