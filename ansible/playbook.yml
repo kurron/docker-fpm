@@ -1,5 +1,5 @@
 ---
-- name: Install FPM
+- name: Install FPM Dependencies
   hosts: localhost
   tasks:
       - package: 
@@ -10,3 +10,11 @@
         - gcc
         - make
         - rpm-build
+
+- name: Install FPM Gem
+  hosts: localhost
+  tasks:
+      - gem:
+            name: fpm
+            user_install: no
+            state: latest
