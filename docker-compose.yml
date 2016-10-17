@@ -6,5 +6,5 @@ services:
         network_mode: "none"
         stdin_open: true
         tty: true
-#       command: /bin/bash
+#       command: fpm --version 
 
