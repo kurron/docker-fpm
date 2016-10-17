@@ -1,16 +1,10 @@
 version: '2'
 services:
-    aws-cli:
+    fpm:
         build: .
-        image: aws-cli:compose
-        network_mode: "host"
-        environment:
-            AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
-            AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-            AWS_REGION: ${AWS_REGION}
-        user: 1000:1000
+        image: fpm:compose
+        network_mode: "none"
         stdin_open: true
-        tty: false
-#       command: help
-        command: --version
+        tty: true
+#       command: /bin/bash
 
