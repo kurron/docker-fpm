@@ -64,6 +64,9 @@ rpm --query --package --list *.rpm
 
 # Troubleshooting
 
+## RPM-Only
+This container has only been tested with creating RPMs.  At some point, we'll probably add Debian support as well.
+
 # License and Credits
 This project is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/).
 
