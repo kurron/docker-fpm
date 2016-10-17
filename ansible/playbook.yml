@@ -1,0 +1,12 @@
+---
+- name: Install FPM
+  hosts: localhost
+  tasks:
+      - package: 
+            name: "{{item}}"
+            state: latest
+        with_items:
+        - ruby-devel
+        - gcc
+        - make
+        - rpm-build
