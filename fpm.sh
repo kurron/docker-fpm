@@ -8,7 +8,7 @@ CMD="docker run \
        --net "none" \
        --user=$(id -u $(whoami)):$(id -g $(whoami)) \
        --volume $(pwd):/pwd \
-       kurron/docker-fpm:1.6.3"
+       kurron/docker-fpm:1.6.4"
 
 echo $CMD "$@"
 $CMD "$@"

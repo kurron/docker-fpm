@@ -10,6 +10,7 @@
         - gcc
         - make
         - rpm-build
+        - rpm-sign
 
 - name: Install FPM Gem
   hosts: localhost
